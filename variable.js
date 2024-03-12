@@ -15,3 +15,18 @@ function var1(){
     console.log(x);
 }
 var1();
+
+// global variable 
+
+var y = 10;
+
+function abc(){
+    console.log(y);
+}
+
+function xyz(){
+    console.log(y);
+}
+
+abc();
+xyz();
