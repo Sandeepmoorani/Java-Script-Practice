@@ -1,6 +1,6 @@
 function hey(){
     // alert('Hey there!');
-    document.write('Hey there!');
+    // document.write('Hey there!');
 }
 hey(); 
 
@@ -10,7 +10,7 @@ hey();
 function add(a,b){
     return a+b;
 }
-document.write(add(5,6)); 
+// document.write(add(5,6)); 
 
 //JavaScript Function Methods
 
@@ -18,6 +18,84 @@ document.write(add(5,6));
 // bind() 	It is used to create a new function.
 // call() 	It is used to call a function contains this value and an argument list.
 // toString() 	It returns the result in a form of a string.
+
+
+
+// apply() method
+var person = {
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
+  }
+  var person1 = {
+    firstName:"John",
+    lastName: "Doe"
+  }
+  var person2 = {
+    firstName:"Mary",
+    lastName: "Doe"
+  }
+  document.write(person.fullName.apply(person1)); 
+
+  // bind() method
+  var person = {
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
+  }
+  var person1 = {
+    firstName:"John",
+    lastName: "Doe"
+  }
+  var person2 = {
+    firstName:"Mary",
+    lastName: "Doe"
+  }
+  var myName = person.fullName.bind(person1); 
+  document.write(myName()); 
+
+  // call() method
+  var person = {
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
+  }
+  var person1 = {
+    firstName:"John",
+    lastName: "Doe"
+  }
+  var person2 = {
+    firstName:"Mary",
+    lastName: "Doe"
+  }
+  document.write(person.fullName.call(person1)); 
+
+  // toString() method
+  var person = {
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
+  }
+  var person1 = {
+    firstName:"John",
+    lastName: "Doe"
+  }
+  var person2 = {
+    firstName:"Mary",
+    lastName: "Doe"
+  }
+  document.write(person.fullName.toString()); 
+
+  // JavaScript Function Properties
+
+  // constructor 	It returns the function that created the Function object's prototype.
+  // length 	It returns the number of arguments expected by the function.
+  // name 	It returns the name of the function.
+
+  // constructor property
+  function add(a,b){
+    return a+b;
+}
 
 
 
