@@ -57,6 +57,9 @@ var arr3 = [
 
 ];
 
+arr3[0][0]="Moorani";
+arr3[0][0]="Sandeep Moorani";
+
 document.write("<table border= '1px'cellspacing='0'  >");
 
 for(var a=0; a<8; a++){
@@ -71,5 +74,44 @@ for(var a=0; a<8; a++){
 }
 document.write("</table>");
 
-document.write(arr3.length);
+// document.write(arr3.length);
+
+
+
+
+//array methods
+
+// var arr4 = [1,2,5,4,6,8,7,9,3];
+
+var arr4 = ["Sandeep", "Raj", "Rohit", "Sohail", "Ali", "Alijan", "Alihi", "Alihello"];
+// sort() method
+
+// document.write(arr4.sort()+ "<br>");
+
+// reverse() method
+
+// document.write(arr4.reverse());
+
+// push() method
+
+// arr4.push("Ahsan");
+// document.write(arr4);
+
+// pop() method
+
+// arr4.pop();
+// document.write(arr4);
+
+// document.write(arr4.pop());
+
+// shift() method
+arr4.shift();
+document.write(arr4);
+
+// unshift() method
+arr4.unshift("hello");
+document.write(arr4);
+
+
+
 
