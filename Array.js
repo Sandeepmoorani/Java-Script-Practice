@@ -33,10 +33,43 @@ for(i=0; i<6; i++){
 var arr2 = new Array(3);
 
 for (var  g=0;g<3; g++){
-    arr2[g]= prompt("Enter the value of array");
+    // arr2[g]= prompt("Enter the value of array");
     document.write(arr2[g] + "<br>");
 }
 
 // for (i=0; i<3; i++){
 //     document.write(arr2[i] + "<br>");
 // }
+
+
+
+// multidimensional array
+
+var arr3 = [
+    ["Sandeep", 15,"Male","SWE"],
+    ["Sohail", 16,"Male","SWE"],
+    ["Lachamn", 18,"Male","CSE"],
+    ["Ali", 20,"Male","SW"],
+    ["Alibhai", 20,"Male","SW"],
+    ["Alijan", 20,"Male","SW"],
+    ["Alihi", 20,"Male","SW"],
+    ["Alihello", 20,"Male","SW"],
+
+];
+
+document.write("<table border= '1px'cellspacing='0'  >");
+
+for(var a=0; a<4; a++){
+
+    document.write("<tr>");
+
+    for(var b=0; b<4; b++){
+        document.write(" <td>" + arr3[a][b] + " </td>");
+    }
+    document.write( "</tr>");
+
+}
+document.write("</table>");
+
+document.write(arr3.length);
+
