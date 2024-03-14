@@ -59,7 +59,7 @@ var arr3 = [
 
 document.write("<table border= '1px'cellspacing='0'  >");
 
-for(var a=0; a<4; a++){
+for(var a=0; a<8; a++){
 
     document.write("<tr>");
 
