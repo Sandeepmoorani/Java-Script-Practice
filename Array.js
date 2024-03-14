@@ -28,3 +28,15 @@ var arr2 = [true, "Sandeep", null, "Raj", 3, "Rohit"];
 for(i=0; i<6; i++){
     document.write(arr2[i] + "<br>");
 }
+
+
+var arr2 = new Array(3);
+
+for (var  g=0;g<3; g++){
+    arr2[g]= prompt("Enter the value of array");
+    document.write(arr2[g] + "<br>");
+}
+
+// for (i=0; i<3; i++){
+//     document.write(arr2[i] + "<br>");
+// }
