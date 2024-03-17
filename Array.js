@@ -150,6 +150,42 @@ var result = arr6.every(function(value){
 });
 document.write(result + "<br>");
 
+//find() method
+
+var result = arr6.findIndex(function(value){
+    return value == "sandeep";
+}
+);
+document.write(result + "<br>");
+
+// filter() method
+
+var arr7 = [12,30,18,21];
+
+var result = arr7.filter(function(value){
+    return value >=18;
+}
+);
+document.write(result + "<br>");
+
+//toString() method
+
+document.write(arr6.toString() + "<br>");
+
+// fill() method
+
+var arr8 = [1,2,3,4,5,6,7,8,9,10];
+arr8.fill(0);
+document.write(arr8 + "<br>");
+
+// foreach() method
+
+arr6.forEach(function(value, index, array){
+    document.write(value + index+array+ "<br>");
+}
+);
+
+
 
 
 
