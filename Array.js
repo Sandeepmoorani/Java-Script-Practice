@@ -114,16 +114,28 @@
 // arr4.unshift("hello");
 // document.write(arr4);
 
-var arr5 = [1,2,3,4,5,6,7,8,9,10];
+// var arr5 = [1,2,3,4,5,6,7,8,9,10];
 // splice() method
 
-arr5.splice(1,3);
-document.write(arr5 + "<br>");
+// arr5.splice(1,3);
+// document.write(arr5 + "<br>");
 
 // slice() method
 
-arr5.slice(1,3);
-document.write(arr5);
+// arr5.slice(1,3);
+// document.write(arr5);
+
+
+var arr6 = ["sandeep", "raj", "rohit", "sohail"];
+
+document.write(arr6 + "<br>");
+
+// indexOf() method
+document.write(arr6.indexOf("sohail") + "<br>");
+
+// lastIndexOf() method
+document.write(arr6.lastIndexOf("sandeep",2) + "<br>");
+
 
 
 
