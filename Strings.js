@@ -24,3 +24,27 @@ document.write(str.match(/is/g) + "<br>");
 
 // replace
 document.write(str.replace("is", "are") + "<br>");
+
+//charAT
+document.write(str.charAt(5) + "<br>");
+
+//charCodeAt
+document.write(str.charCodeAt(5) + "<br>");
+
+//split
+document.write(str.split(" ") + "<br>");
+
+//substring
+document.write(str.substring(5, 10) + "<br>");
+
+//slice
+document.write(str.slice(5, 10) + "<br>");
+
+//substr
+document.write(str.substr(5, 10) + "<br>");
+
+//trim
+document.write(str.trim() + "<br>");
+
+// valueOf
+document.write(str.valueOf() + "<br>");
