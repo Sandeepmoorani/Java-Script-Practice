@@ -100,15 +100,15 @@ document.write(person.fullname() + "<br>");
 
 // Example
 
-var person = {
-    name: "sandeep",
-    rollno: 15,
-    dept: "SWE",
-    get fullname(){
-        return this.name + " " + this.rollno;
-    }
-}
-document.write(person.fullname + "<br>");
+// var person = {
+//     name: "sandeep",
+//     rollno: 15,
+//     dept: "SWE",
+//     get fullname(){
+//         return this.name + " " + this.rollno;
+//     }
+// }
+// document.write(person.fullname + "<br>");
 
 // JavaScript Object Constructors
 
@@ -124,15 +124,15 @@ document.write(person.fullname + "<br>");
 
 // Example
 
-function person(name, rollno, dept){
-    this.name = name;
-    this.rollno = rollno;
-    this.dept = dept;
-}
-var person1 = new person("sandeep", 15, "SWE");
-var person2 = new person("sandeep", 15, "SWE");
-document.write(person1.name + " " + person1.rollno + " " + person1.dept + "<br>");
-document.write(person2.name + " " + person2.rollno + " " + person2.dept + "<br>");
+// function person(name, rollno, dept){
+//     this.name = name;
+//     this.rollno = rollno;
+//     this.dept = dept;
+// }
+// var person1 = new person("sandeep", 15, "SWE");
+// var person2 = new person("sandeep", 15, "SWE");
+// document.write(person1.name + " " + person1.rollno + " " + person1.dept + "<br>");
+// document.write(person2.name + " " + person2.rollno + " " + person2.dept + "<br>");
 
 // JavaScript Object Prototypes
 
@@ -146,14 +146,39 @@ document.write(person2.name + " " + person2.rollno + " " + person2.dept + "<br>"
 
 // Example
 
-function person(name, rollno, dept){
-    this.name = name;
-    this.rollno = rollno;
-    this.dept = dept;
+// function person(name, rollno, dept){
+//     this.name = name;
+//     this.rollno = rollno;
+//     this.dept = dept;
+// }
+// person.prototype.age = 20;
+// var person1 = new person("sandeep", 15, "SWE");
+// document.write(person1.age + "<br>");
+
+
+// map() method
+
+// The map() method creates a new array with the results of calling a function for every array element.
+
+// The map() method calls the provided function once for each element in an array, in order.
+
+// Note: map() does not execute the function for array elements without values.
+
+// Note: this method does not change the original array.
+
+// Example
+
+var numbers = [4, 9, 16, 25];
+var x = numbers.map(Math.sqrt);
+document.write(x + "<br>");
+
+var num = [1,2,3,4,5];
+var a = num.map(multi);
+document.write(a + "<br>");
+
+function multi(value){
+    return value * 2;
 }
-person.prototype.age = 20;
-var person1 = new person("sandeep", 15, "SWE");
-document.write(person1.age + "<br>");
 
 
 
