@@ -136,6 +136,23 @@ document.write(arr6.indexOf("sohail") + "<br>");
 // lastIndexOf() method
 document.write(arr6.lastIndexOf("sandeep",2) + "<br>");
 
+// some() method
+
+var result = arr6.some(function(value){
+    return value == "sandeep";
+});
+document.write(result + "<br>");
+
+// every() method
+
+var result = arr6.every(function(value){
+    return value == "sandeep";
+});
+document.write(result + "<br>");
+
+
+
+
 
 
 
