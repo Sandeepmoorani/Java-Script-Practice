@@ -15,8 +15,23 @@
 
 var element;
 // element = document;
-element = document.head;
-element = document.body;
-element = document.title;
-element = document.links;
+// element = document.head;
+// element = document.body;
+// element = document.title;
+// element = document.links;
+// console.log(element);
+
+// 1. getElementById
+
+element = document.getElementById('hi');
+console.log(element);
+
+// 2. getElementsByClassName
+
+element = document.getElementsByClassName('hello')[1];
+// console.log(element);
+
+// 3. getElementsByTagName
+
+element = document.getElementsByTagName('p');
 console.log(element);
